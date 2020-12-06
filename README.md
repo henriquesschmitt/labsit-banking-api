@@ -11,7 +11,7 @@ Eduardo Fillipe Fillipe da Silva Reis - https://www.linkedin.com/in/eduardo-fill
 	- API: http://54.233.210.237:8080/labSitBanking/api/v1/
 	- SWAGGER: http://54.233.210.237:8080/labSitBanking/api/v1/swagger-ui.html
 
-**Após o fim do processo seletivo o a instância acima será encerrada e este repositório marcado como privado.*
+**Após o fim do processo seletivo o a instância acima será encerrada e este repositório marcado como privado.**
 
 - ## Tecnologias Utilizadas
 	- Java
@@ -28,12 +28,12 @@ Eduardo Fillipe Fillipe da Silva Reis - https://www.linkedin.com/in/eduardo-fill
 	- AWS
 # Considerações adicionais
 
-O desenvolvimento do projeto seguiu os requisitos funcionais e não funcionais indicados no documento enviado pela equipe técnica da Labsit. Entretanto, alguns requisitos importantes não foram estabelecids, como os requisitos de Segurança. Dessa forma a estrutura base do projeto foi desenvolvida para suportar as características abaixo, entretanto as mesmas não foram implementadas.
+O desenvolvimento do projeto seguiu os requisitos funcionais e não funcionais indicados no documento enviado pela equipe técnica da Labsit. Entretanto, alguns requisitos importantes não foram estabelecids, como os requisitos de Segurança. Dessa forma a estrutura base do projeto foi desenvolvida para suportar as características abaixo, entretanto as mesmas não foram implementadas mas podem ser seguindo a escificação OAuth2.
 
  - ## Segurança
-	- Recomenda-se que o endpoint da API esteja segura através do protocolo HTTS.
-	- Recomenda-se o implementação de um Sistema de segurança Oauth2 para gerenciar autenticações e autorizações, de preferência externo ao servidor da API Banking.
-	- Recomenda-se que a API Banking não seja exposta diretamente, mas através de um Middleware de Integração como a CA API Gateway ou IBM Integration BUS. 
+	- Recomenda-se que o endpoint da API esteja seguro através do protocolo HTTPS.
+	- Recomenda-se a implementação de um Sistema de segurança Oauth2 para gerenciar autenticações e autorizações, de preferência externo ao servidor da API Banking.
+	- Recomenda-se que a API Banking não seja exposta diretamente, mas através de um Middleware de Integração como a CA API Gateway ou IBM Integration BUS que irá expor serviços ao usuário criando abstrações e contratos conforme demanda.
 
  - **Sugestão de arquitetura de segurança**:
 	 - **Autenticação**	![Authentication Pipeline](https://github.com/eduardo-fillipe/labsit-banking-api/blob/main/readme-images/auth.png?raw=true)
@@ -46,7 +46,7 @@ O desenvolvimento do projeto seguiu os requisitos funcionais e não funcionais i
 	 5. Middleware solicita as informações ao Banking Server
 	 6. Resposta da etapa 5
 	 7. Resposta da etapa 4
-	 8. O servidor verifica as informações e responde com 401 se o procedimento falhou ou com um Token JWT.
+	 8. O servidor verifica as informações e responde com uma falha do 401 se o procedimento falhou ou com um Token JWT.
 	 9. Resposta da etapa 2
 	 
 	- **Autorização** 
