@@ -28,7 +28,7 @@ Eduardo Fillipe Fillipe da Silva Reis - https://www.linkedin.com/in/eduardo-fill
 	- AWS
 # Considerações adicionais
 
-O desenvolvimento do projeto seguiu os requisitos funcionais e não funcionais indicados no documento enviado pela equipe técnica da Labsit. Entretanto, alguns requisitos importantes não foram estabelecids, como os requisitos de Segurança. Dessa forma a estrutura base do projeto foi desenvolvida para suportar as características abaixo, entretanto as mesmas não foram implementadas mas podem ser seguindo a escificação OAuth2.
+O desenvolvimento do projeto seguiu os requisitos funcionais e não funcionais indicados no documento enviado pela equipe técnica da Labsit. Entretanto, alguns requisitos importantes não foram estabelecids, como os requisitos de Segurança. Dessa forma a estrutura base do projeto foi desenvolvida para suportar as características abaixo, entretanto as mesmas não foram implementadas mas podem ser seguindo a especificação OAuth2.
 
  - ## Segurança
 	- Recomenda-se que o endpoint da API esteja seguro através do protocolo HTTPS.
